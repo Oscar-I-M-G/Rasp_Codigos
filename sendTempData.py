@@ -7,15 +7,15 @@ import mysql.connector as mariadb
 
 
 # Setting up the DHT sensor
-dht_device = adafruit_dht.DHT11(board.D4)
+dht_device = adafruit_dht.DHT11(board.D22)
 
 # Setting up the button
-button = digitalio.DigitalInOut(board.D6)
+button = digitalio.DigitalInOut(board.D27)
 button.direction = digitalio.Direction.INPUT
 button.pull = digitalio.Pull.UP
 
 # Setting up the LED
-led = digitalio.DigitalInOut(board.D13)
+led = digitalio.DigitalInOut(board.D17)
 led.direction = digitalio.Direction.OUTPUT
 
 # List to store the data
